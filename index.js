@@ -8,5 +8,6 @@ function clearResult(){
 }
 
 function calculate(){
+    display.value=eval(display.value)
     
 }

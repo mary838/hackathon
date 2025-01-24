@@ -11,3 +11,14 @@ function calculate(){
     display.value=eval(display.value)
     
 }
+
+function backspace(){
+    display.value=display.value.slice(0,-1)
+}
+
+function square(){
+    display.value=display.value*display.value
+}
+function persiontage(){
+    display.value=display.value/100
+}

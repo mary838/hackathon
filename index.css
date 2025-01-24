@@ -4,23 +4,24 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: hsl(0, 0%, 95%);
+    /* background-color: hsl(0, 42%, 54%); */
 }
 .container{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: hsl(0, 0%, 15%);
+    background-color: hsl(0, 1%, 41%);
     border-radius: 15px;
     max-width: 500px;
     overflow: hidden;
+    margin-top: 100px;
 }
 #result{
     width: 100%;
-    padding: 20px;
-    background-color: hsl(0, 0%, 20%);
+    padding:10px 5px;
+    background-color: hsl(0, 1%, 32%);
     color: white;
     font-size: 5rem;
     border: none;
-    text-align: left;
+    text-align: right;
     }
 .keypad{
     display: grid;
@@ -40,12 +41,14 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background-color: hsl(0, 0%, 40%);
+    background-color: hsl(0, 27%, 96%);
+    color: black;
 }
 button:active{
     background-color: hsl(0, 0%, 50%);
 }
 .color-button{
+    font-size: 2rem;
     background-color: hsl(35, 100%, 55%);
 }
 .color-button:hover{
@@ -53,4 +56,34 @@ button:active{
 }
 .color-button:active{
     background-color: hsl(35, 100%, 75%);
+}
+
+@media screen and (max-width:500px){
+    body{
+        margin: 0;
+        display: flex;
+        height: auto;
+    }
+    .container{
+        margin-top: 0px;
+        background-color: rgb(170, 165, 158);
+    }
+    button{
+        font-size: 2rem;
+        width: 70px;
+        height: 70px;
+    }
+    
+    #result{
+        font-size: 2rem;
+        background-color: rgb(195, 209, 247);
+        color: black;
+    }
+    .color-button{
+        font-size: 1.5rem;
+        color: white;
+    }
+
+
+    
 }

@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-        <input type="text" id="result" value="" readonly/>
+        <input type="text" id="result" value="0" readonly/>
       <div class="keypad">
         <button onclick="appendNumber('+')" class="color-button">+</button>
         <button onclick="appendNumber(7)" class="color1">7</button>
@@ -27,7 +27,12 @@
         <button onclick="appendNumber(0)" class="color1">0</button>
         <button onclick="appendNumber('.')" class="color1">.</button>
         <button onclick="calculate()" class="color1">=</button>
-        <button onclick="clearResult()" class="color-button">C</button>
+        <button onclick="clearResult()" class="color-button">DEL</button>
+        <button onclick="backspace()" class="color-button">AC</button>
+        <button onclick="square()" class="color-button">x2</button>
+        <button onclick="persiontage()" class="color-button">%</button>
+
+
     </div>
     </div>
 

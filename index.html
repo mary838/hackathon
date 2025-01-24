@@ -9,15 +9,13 @@
   </head>
   <body>
     <div class="container">
-      <div class="results">
         <input type="text" id="result" value="" readonly/>
-      </div>
       <div class="keypad">
-        <button onclick="clearResult()" class="color-button">C</button>
+        <button onclick="appendNumber('+')" class="color-button">+</button>
         <button onclick="appendNumber(7)" class="color1">7</button>
         <button onclick="appendNumber(8)" class="color1">8</button>
         <button onclick="appendNumber(9)" class="color1">9</button>
-        <button onclick="appendNumber('/')" class="color-button">/</button>
+        <button onclick="appendNumber('-')" class="color-button">-</button>
         <button onclick="appendNumber(4)" class="color1">4</button>
         <button onclick="appendNumber(5)" class="color1">5</button>
         <button onclick="appendNumber(6)" class="color1">6</button>
@@ -25,11 +23,11 @@
         <button onclick="appendNumber(1)" class="color1">1</button>
         <button onclick="appendNumber(2)" class="color1">2</button>
         <button onclick="appendNumber(3)" class="color1">3</button>
-        <button onclick="appendNumber('-')" class="color-button">-</button>
+        <button onclick="appendNumber('/')" class="color-button">/</button>
         <button onclick="appendNumber(0)" class="color1">0</button>
         <button onclick="appendNumber('.')" class="color1">.</button>
         <button onclick="calculate()" class="color1">=</button>
-        <button onclick="appendNumber('+')" class="color-button">+</button>
+        <button onclick="clearResult()" class="color-button">C</button>
     </div>
     </div>
 
